@@ -1,0 +1,1 @@
+import{d as r}from"./utils-vendor.C5noEFev.js";function o(e){const t=r(e);return t.isValid()?t.format("YYYY-MM-DD"):null}function s(e,t=null){const a=r(e);if(!a.isValid())return"";const n=t==null?r():r(t);return a.isSame(n,"day")?"Today":a.isSame(n.subtract(1,"day"),"day")?"Yesterday":a.isSame(n,"year")?a.format("D MMMM"):a.format("D MMMM YYYY")}export{s as f,o as l};

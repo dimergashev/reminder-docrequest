@@ -1,0 +1,1 @@
+const i="document_expiry",u=t=>t?.status==="archived"||t?.deleted===!0;function o(t,e){if(!e||!Array.isArray(t))return null;const r=t.filter(n=>n?.obligation_type===i&&n?.source_s3_key===e);return r.length?r.find(n=>!u(n))||r[0]:null}function l(t,e){return o(t,e)?.expiry_date??null}export{l as d};
